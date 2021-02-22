@@ -1,6 +1,8 @@
 function enviar(){
     let texto = document.querySelector(".texto").value
     document.querySelector(".inserir").innerHTML = texto
+       let foto = document.querySelector(".loading")
+            foto.style.display="block"
     fetch(`https://geo.ipify.org/api/v1?apiKey=at_KeWCa3fgyIlOIfbQ4rIIe3OvyjoV0&ipAddress=${texto}`)
     .then(response => response.json())
     .then(dados => {
@@ -19,7 +21,8 @@ function enviar(){
             let arr3 = e[3]
             let arr4 = arr3[1]
             document.querySelector(".inserir5").innerHTML = arr4
-             
+              let foto = document.querySelector(".loading")
+            foto.style.display="none"
            //Checando se o mapa já foi iniciado
          var container = L.DomUtil.get('myMap');
             if(container != null){
