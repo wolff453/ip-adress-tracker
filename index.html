@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Adress</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="bg-blue">
+        <div class="title">
+            <h1>IP ADRESS TRACKER</h1>
+            <div class="form">
+                <form action="">
+                    <input class="texto"type="text" placeholder="Search for any IP adress or domain"name="" id="">
+                    <input onclick="return enviar()"class="submit"type="image" src="images/icon-arrow.svg">
+                </form>
+            </div>
+        </div>
+      
+    </div>
+  
+
+
+    <div class="mae">
+        <div class="father">
+            <div class="meio">
+                <div class="ip">
+                    <p>IP ADRESS</p>
+                    <p class="inserir"></p>
+                </div>
+                <hr>
+                <div class="location">
+                    <p>LOCATION</p>
+                    <p class="inserir2"></p>
+                    <p class="inserir3"></p>
+                </div>
+                <hr>
+
+                <div class="timezone">
+                    <p>TIMEZONE</p>
+                    <p class="inserir4"></p>
+                </div>
+                <hr>
+
+                <div class="isp">
+                    <p>ISP</p>
+                    <p class="inserir5"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myMap"></div>
+
+
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+   integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+   crossorigin=""></script>
+   
+
+
+    
+
+    <script src="app.js"></script>
+    
+
+    
+</body>
+</html>
+

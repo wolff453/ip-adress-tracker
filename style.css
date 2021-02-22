@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+body{
+    background: #ddd;
+}
+html, body{
+    overflow-x: hidden;
+}
+.bg-blue{
+    background: url("./images/pattern-bg.png");
+    background-repeat: no-repeat;
+     background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    
+    text-align: center;
+}
+.title{
+    margin-top: 30px;
+}
+.texto{
+    width: 500px;
+    margin-top: 30px;
+    height: 45px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.title h1{
+    color: white;
+}
+.submit{
+    background: hsl(0, 0%, 17%);
+    background-repeat: no-repeat;
+    border: none;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border-radius: 15px 15px;
+    position: relative;
+     right: 0.7%;
+     top: 18.5px;
+     border-top-right-radius: 200px;
+     border-bottom-right-radius: 200px;
+     outline: none;
+      transition: 1s ease;
+     
+}
+.submit:hover{
+    opacity: 0.7;
+}
+.mae{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 65px;
+   
+}
+ .father{
+    width: 1200px;
+    height:150px;
+    background: white;
+    border-radius: 20px 20px;
+    -webkit-box-shadow: 2px 2px 10px 4px rgba(0,0,0,0.32); 
+    box-shadow: 2px 2px 10px 4px rgba(0,0,0,0.32);
+    
+ }
+ .meio{
+     display: flex;
+     justify-content: space-around;
+     color: hsl(0, 0%, 59%);
+ }
+ .meio {
+     margin-top: 20px;
+ }
+ 
+  hr{
+      height: 90px;
+      border-color: hsl(0, 0%, 100%);
+   }
+   .inserir, .inserir2, .inserir3, .inserir4 , .inserir5{
+       margin-top: 20px;
+       color: black;
+   }
+  
+   #myMap{
+     position: absolute;
+     width: 100%;
+     bottom: 5px;
+     z-index: -5;
+     height: 100%;
+}
+@media(max-width: 700px){
+    .texto{
+        width: 300px;
+
+    }
+    .meio{
+       flex-direction: column;
+ 
+       text-align: center;
+     
+    }
+    .father{
+         display: flex;
+         justify-content: center;
+         height: 300px;
+         width: 300px;
+    }
+    .mae{
+        bottom: 120px;
+    }
+    
+     hr{
+      display: none;
+     }
+      
+      body{
+          height: 620px;
+      }
+      #myMap{
+        
+        top: 250px;
+        
+   }
+   .submit{
+       right:  2%;
+   }
+   .inserir, .inserir2, .inserir3, .inserir4 , .inserir5{
+    margin-top: 5px;
+    color: black;
+}
+}
+@media(max-width:380px){
+    .texto{
+        width: 250px;
+
+    }
+    .inserir, .inserir2, .inserir3, .inserir4 , .inserir5{
+        margin-top: 5px;
+        color: black;
+    }
+}
